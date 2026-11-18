@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt" id="exe-page-mujv2o4l-8ifhrn77r">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.5">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Exploração Matemática | Aula Otimização - Cálculo 1</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+<script src="../libs/exe_math/tex-mml-svg.js"> </script>
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mujv2o4l-8ifhrn77r" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Decisões Otimizadas</a>
+<ul class="other-section">
+<li> <a href="../html/questionamentos.html" class="no-ch">Questionamentos</a>
+</li>
+<li class="active"> <a href="../html/exploracao-matematica.html" class="active daddy">Exploração Matemática</a>
+<ul class="other-section">
+<li> <a href="../html/investigacao-matematica.html" class="no-ch">Investigação Matemática</a>
+</li>
+<li> <a href="../html/formalizacao.html" class="no-ch">Formalização</a>
+</li>
+<li> <a href="../html/resolvendo.html" class="no-ch">Resolvendo</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/um-novo-desafio.html" class="no-ch">Um novo desafio</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/avaliacao-da-atividade.html" class="no-ch">Avaliação da Atividade</a>
+</li>
+</ul>
+</nav><main id="page-mujv2o4l-8ifhrn77r" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Aula Otimização - Cálculo 1</p></div>
+<div class="page-header"><h1 class="page-title">Exploração Matemática</h1></div>
+</header><div id="page-content-page-mujv2o4l-8ifhrn77r" class="page-content">
+<article id="block-mujvbeeh-zsdf9bvdx" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<span class="exe-material-icon" style="--exe-material-icon-url:url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M402-240v-60h59l121-139-121-141h-74l-71%20366q-8%2045-34%2069.5T215-120q-41%200-68.5-24T119-204q0-27%2015-43.5t39-16.5q21%200%2034.5%2012t13.5%2032q0%2011-4.5%2020.5T204-184q4%202%208.5%203t9.5%201q13%200%2022-12.5t13-32.5l69-355H200v-60h137l21-106q9-45%2036-69.5t67-24.5q41%200%2067.5%2024t26.5%2060q0%2027-15%2043.5T501-696q-20%200-34-11.5T453-738q0-10%204-19.5t10-15.5q-2-2-6-3.5t-8-1.5q-13%200-22.5%2012T417-735l-18%2095h189v60h-47l83%2096%2078-96h-48v-60h186v60h-58L662-439l120%20139h58v60H654v-60h48l-80-93-82%2093h48v60H402Z%22%2F%3E%3C%2Fsvg%3E');" aria-hidden="true"></span>
+</div>
+<h1 class="box-title">Como modelamos o problema?</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1790516537512-qf6m2302t" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1790516537512-qf6m2302t&quot;}">
+<div class="exe-text-template">
+    <p style="text-align: justify;">      Agora que já observamos a situação e vimos que existem diferentes maneiras de distribuir os \(40\) metros de cerca, podemos investigar matematicamente qual dessas possibilidades produz a <strong>maior área</strong> possível. Para isso, precisamos descobrir como as dimensões do cercado estão relacionadas e representar sua área em função de uma das dimensões.</p>
+<p style="text-align: justify;">      A ideia é explorar diferentes combinações de largura e comprimento, observar como a área se comporta e procurar uma configuração que torne essa área máxima. Vamos, então, transformar a situação em um modelo matemático e investigar:<strong> qual é a melhor combinação de dimensões para o cercado?</strong></p>
+<p><br /></p>
+<p><img src="../content/resources/OtimizacaoIlustracao2.png" width="1528" height="821" alt="Figura de um desenho de uma fazenda com plantações, um fazendeiro e um cercado para os animais. O cercado tem comprimento x e largura y." /></p>
+</div>
+</div>
+</div>
+</article><article id="block-mujve3c0-kai55d460" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<span class="exe-material-icon" style="--exe-material-icon-url:url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M160-120v-128l571-571q11-11%2022.5-16t24.5-5q12%200%2023.5%205t22.5%2016l35%2035q11%2010%2016%2021.5t5%2024.5q0%2012-5%2024t-16%2023L288-120H160Zm593-549%2068-68-44-44-68%2068%2044%2044ZM560-120q78%200%20139-36.5T760-260q0-40-29.5-73.5T638-386l-47%2047q50%2012%2079.5%2034t29.5%2045q0%2032-40.5%2056T560-180q-12%200-21%208.5t-9%2021.5q0%2012%209%2021t21%209ZM240-414l48-48q-54-13-81-27.5T180-520q0-16%2021.5-30.5T290-590q83-31%20111.5-59.5T430-719q0-56-41-88.5T280-840q-42%200-76%2014.5T153-789q-8%209-7.5%2021t11.5%2020q10%208%2022.5%206.5T200-751q15-15%2034-22t46-7q46%200%2068%2018t22%2043q0%2020-19%2035t-85%2039q-94%2034-120%2062t-26%2063q0%2032%2028%2062t92%2044Z%22%2F%3E%3C%2Fsvg%3E');" aria-hidden="true"></span>
+</div>
+<h1 class="box-title">Pare e modele:</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1790516663135-gst2rknno" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1790516663135-gst2rknno&quot;}">
+<div class="exe-text-template">
+    <ul>
+<li>Qual a fórmula da área para este problema?</li>
+</ul>
+<p><br /></p>
+<ul>
+<li>Lembrando que o fazendeiro tem apenas \(40\) metros de cerca, como seria possível utilizar essa informação? De que forma?</li>
+</ul>
+<p><br /></p>
+<ul>
+<li>Você consegue ver sua fórmula de área como uma função de uma variável \(A(x) \)?</li>
+</ul>
+<p></p>
+<ul>
+<li>Essa função de área \(A(x)\) é contínua?</li>
+</ul>
+<p><br /></p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/questionamentos.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/investigacao-matematica.html" title="Próximo" class="nav-button nav-button-right"><span>Próximo</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licença: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">Creative Commons: Atribuição - Compartilhar Iguais 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Feito com eXeLearning <span>(Nova janela)</span></span></a></p>
+</body>
+</html>
